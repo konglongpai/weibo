@@ -9,6 +9,7 @@ class UserController extends Controller
 {
     //
     public function create(){
+        echo ini_get('memory_limit').PHP_EOL;
         return view('users.create');
     }
 

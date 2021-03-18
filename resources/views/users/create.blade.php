@@ -8,7 +8,8 @@
         </div>
 
         <div class="card-body">
-            <form action="">
+        @include('shared._errors')
+            <form action="{{ route('user.store') }}" method="POST">
             {{ csrf_field() }}
                 <div class="form-group">
                     <label for="name">姓名:</label>
