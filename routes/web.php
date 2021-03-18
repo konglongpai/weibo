@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StaticPagesController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,5 +22,5 @@ Route::get('/','StaticPagesController@home');
 Route::get('/help','StaticPagesController@help');
 //Route::get('/about','StaticPagesController@about');
 Route::get('about',[StaticPagesController::class,'about']);
-
-
+Route::get('/','StaticPagesController@home')->name('home');
+Route::resource('user', 'UserController');
