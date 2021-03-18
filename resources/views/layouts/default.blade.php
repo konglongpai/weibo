@@ -18,7 +18,7 @@
             </ul>
         </div>
     </nav>
-
+    @include('shared._message')
     <div class="container">
         @yield('content')
     </div>
